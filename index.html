@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="LAMSA - لمسة، متجرك الإلكتروني للجمال والأنوثة، المكياج، العناية بالبشرة والشعر، العطور، الإكسسوارات والهدايا.">
+
+    <meta name="theme-color" content="#fff8f8">
+
+    <meta name="robots" content="index, follow">
+
+    <title>LAMSA | لمسة - عالم الجمال والأنوثة</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- رأس الصفحة -->
+    <header class="site-header" id="site-header">
+
+        <div class="container">
+
+            <!-- شعار المتجر -->
+            <a href="#home" class="logo" aria-label="LAMSA الصفحة الرئيسية">
+
+                <span class="logo-name">LAMSA</span>
+
+                <span class="logo-subtitle">عالم الجمال والأنوثة</span>
+
+            </a>
+
+            <!-- قائمة التنقل -->
+            <nav class="main-nav" aria-label="القائمة الرئيسية">
+
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#categories">الأقسام</a></li>
+                    <li><a href="#products">المنتجات</a></li>
+                    <li><a href="#offers">العروض</a></li>
+                    <li><a href="#new-arrivals">وصل حديثًا</a></li>
+                    <li><a href="#gifts">الهدايا</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+
+            </nav>
+
+            <!-- أدوات التسوق -->
+            <div class="header-actions">
+
+                <button type="button" class="search-button" aria-label="البحث عن المنتجات" aria-controls="search-panel"
+                    aria-expanded="false">
+                    🔍
+                </button>
+
+                <button type="button" class="account-button" aria-label="حسابي" aria-controls="account-panel"
+                    aria-expanded="false">
+                    👤
+                </button>
+
+                <button type="button" class="wishlist-button" aria-label="المفضلة" aria-controls="wishlist-panel"
+                    aria-expanded="false">
+                    ♡
+                    <span class="wishlist-count">0</span>
+                </button>
+
+                <button type="button" class="cart-button" aria-label="سلة المشتريات" aria-controls="cart-panel"
+                    aria-expanded="false">
+                    🛒
+                    <span class="cart-count">0</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- نافذة البحث -->
+    <section class="search-panel" id="search-panel" aria-label="البحث عن المنتجات" hidden>
+
+        <div class="container">
+
+            <form class="search-form" role="search" action="#products">
+
+                <label for="product-search">ابحثي عن منتجك</label>
+
+                <input type="search" id="product-search" name="q" placeholder="اسم المنتج أو القسم..."
+                    autocomplete="off">
+
+                <button type="submit">بحث</button>
+
+                <button type="button" class="close-search" aria-label="إغلاق البحث">
+                    إغلاق
+                </button>
+
+            </form>
+
+            <p id="search-status" role="status" aria-live="polite"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- واجهة الحساب -->
+    <section class="account-panel section" id="account-panel" aria-labelledby="account-title" hidden>
+
+        <div class="container">
+
+            <h2 id="account-title">حسابك في لمسة</h2>
+
+            <p>
+                أدخلي بياناتك لتسجيل الدخول.
+            </p>
+
+            <form id="account-form">
+
+                <div class="form-group">
+
+                    <label for="account-email">البريد الإلكتروني</label>
+
+                    <input type="email" id="account-email" name="email" autocomplete="email" required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="account-password">كلمة المرور</label>
+
+                    <input type="password" id="account-password" name="password" autocomplete="current-password"
+                        required>
+
+                </div>
+
+                <button type="submit">تسجيل الدخول</button>
+
+            </form>
+
+            <p id="account-status" role="status" aria-live="polite"></p>
+
+            <button type="button" class="close-account">
+                إغلاق
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- المحتوى الرئيسي -->
+    <main>
+
+        <!-- الواجهة الرئيسية -->
+        <section class="hero" id="home">
+
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <span class="hero-label">
+                        اكتشفي جمالك مع لمسة
+                    </span>
+
+                    <h1>جمالك يبدأ من هنا</h1>
+
+                    <p>
+                        اكتشفي عالمًا من الجمال والعناية،
+                        من مستحضرات التجميل إلى العطور والإكسسوارات،
+                        واختاري ما يناسب أسلوبك الخاص.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#products" class="btn btn-primary">
+                            تسوقي الآن
+                        </a>
+
+                        <a href="#categories" class="btn btn-secondary">
+                            اكتشفي الأقسام
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-image">
+
+                    <img src="imag.jpg" alt="مجموعة من منتجات الجمال والعناية" fetchpriority="high">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- أقسام المتجر -->
+        <section class="categories section" id="categories">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>تسوقي حسب القسم</span>
+
+                    <h2>اكتشفي عالم لمسة</h2>
+
+                    <p>
+                        كل ما تحتاجينه لجمالك وأناقتك في مكان واحد.
+                    </p>
+
+                </div>
+
+                <div class="categories-grid">
+
+                    <article class="category-card">
+
+                        <a href="#products" data-category="makeup">
+
+                            <img src="imag8 (2).jpg" alt="مستحضرات المكياج" loading="lazy">
+
+                            <h3>المكياج</h3>
+
+                        </a>
+
+                    </article>
+
+                    <article class="category-card">
+
+                        <a href="#products" data-category="skincare">
+
+                            <img src="imag2.jpg" alt="منتجات العناية بالبشرة" loading="lazy">
+
+                            <h3>العناية بالبشرة</h3>
+
+                        </a>
+
+                    </article>
+
+                    <article class="category-card">
+
+                        <a href="#products" data-category="haircare">
+
+                            <img src="imag6.jpg" alt="منتجات العناية بالشعر" loading="lazy">
+
+                            <h3>العناية بالشعر</h3>
+
+                        </a>
+
+                    </article>
+
+                    <article class="category-card">
+
+                        <a href="#products" data-category="perfumes">
+
+                            <img src="imag5.jpg" alt="العطور والبخور" loading="lazy">
+
+                            <h3>العطور والبخور</h3>
+
+                        </a>
+
+                    </article>
+
+                    <article class="category-card">
+
+                        <a href="#products" data-category="accessories">
+
+                            <img src="imag3.jpg" alt="الإكسسوارات النسائية" loading="lazy">
+
+                            <h3>الإكسسوارات</h3>
+
+                        </a>
+
+                    </article>
+
+                    <article class="category-card">
+
+                        <a href="#products" data-category="bags">
+
+                            <img src="imag4.jpg" alt="الحقائب النسائية" loading="lazy">
+
+                            <h3>الحقائب</h3>
+
+                        </a>
+
+                    </article>
+
+                    <article class="category-card">
+
+                        <a href="#products" data-category="bodycare">
+
+                            <img src="imag7 (2).jpg" alt="منتجات العناية بالجسم" loading="lazy">
+
+                            <h3>العناية بالجسم</h3>
+
+                        </a>
+
+                    </article>
+
+                    <article class="category-card">
+
+                        <a href="#gifts">
+
+                            <img src="imag1.jpg" alt="بوكسات الهدايا" loading="lazy">
+
+                            <h3>الهدايا</h3>
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- المنتجات الأكثر مبيعًا -->
+        <section class="products section" id="products">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>اختيارات مميزة</span>
+
+                    <h2>منتجات لمسة</h2>
+
+                    <p>
+                        اكتشفي مجموعة من المنتجات المميزة في متجرنا.
+                    </p>
+
+                </div>
+
+                <!-- أدوات تصفية المنتجات -->
+                <div class="product-filters">
+
+                    <div class="form-group">
+
+                        <label for="category-filter">القسم</label>
+
+                        <select id="category-filter" name="category">
+
+                            <option value="all">جميع الأقسام</option>
+                            <option value="makeup">المكياج</option>
+                            <option value="skincare">العناية بالبشرة</option>
+                            <option value="haircare">العناية بالشعر</option>
+                            <option value="perfumes">العطور والبخور</option>
+                            <option value="accessories">الإكسسوارات</option>
+                            <option value="bags">الحقائب</option>
+                            <option value="bodycare">العناية بالجسم</option>
+                            <option value="gifts">الهدايا</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="sort-products">ترتيب المنتجات</label>
+
+                        <select id="sort-products" name="sort">
+
+                            <option value="default">الترتيب الافتراضي</option>
+                            <option value="price-asc">السعر: من الأقل للأعلى</option>
+                            <option value="price-desc">السعر: من الأعلى للأقل</option>
+                            <option value="name-asc">الاسم: أبجديًا</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <!-- بطاقات المنتجات -->
+                <div class="products-grid" id="products-grid">
+
+                    <article class="product-card" id="product-1" data-category="makeup" data-name="أحمر شفاه أنيق"
+                        data-price="2500">
+
+                        <div class="product-image">
+
+                            <img src="imag9 (2).jpg" alt="أحمر شفاه أنيق" loading="lazy">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">المكياج</span>
+
+                            <h3>أحمر شفاه أنيق</h3>
+
+                            <p class="product-description">
+                                لون جذاب لإطلالة مميزة.
+                            </p>
+
+                            <p class="product-price">
+                                <data value="2500">2,500 ريال</data>
+                            </p>
+
+                            <button type="button" class="add-to-cart" data-product-id="product-1">
+                                أضيفي إلى السلة
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="favorite-button" data-product-id="product-1"
+                            aria-label="إضافة أحمر الشفاه إلى المفضلة" aria-pressed="false">
+                            ♡
+                        </button>
+
+                    </article>
+
+
+                    <article class="product-card" id="product-2" data-category="skincare" data-name="مرطب للبشرة"
+                        data-price="3500">
+
+                        <div class="product-image">
+
+                            <img src="imag2.jpg" alt="مرطب للبشرة" loading="lazy">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">العناية بالبشرة</span>
+
+                            <h3>مرطب للبشرة</h3>
+
+                            <p class="product-description">
+                                خيار للعناية اليومية بالبشرة.
+                            </p>
+
+                            <p class="product-price">
+                                <data value="3500">3,500 ريال</data>
+                            </p>
+
+                            <button type="button" class="add-to-cart" data-product-id="product-2">
+                                أضيفي إلى السلة
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="favorite-button" data-product-id="product-2"
+                            aria-label="إضافة المرطب إلى المفضلة" aria-pressed="false">
+                            ♡
+                        </button>
+
+                    </article>
+
+
+                    <article class="product-card" id="product-3" data-category="perfumes" data-name="عطر نسائي مميز"
+                        data-price="8500">
+
+                        <div class="product-image">
+
+                            <img src="imag5.jpg" alt="عطر نسائي مميز" loading="lazy">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">العطور والبخور</span>
+
+                            <h3>عطر نسائي مميز</h3>
+
+                            <p class="product-description">
+                                عطر أنيق لمختلف المناسبات.
+                            </p>
+
+                            <p class="product-price">
+                                <data value="8500">8,500 ريال</data>
+                            </p>
+
+                            <button type="button" class="add-to-cart" data-product-id="product-3">
+                                أضيفي إلى السلة
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="favorite-button" data-product-id="product-3"
+                            aria-label="إضافة العطر إلى المفضلة" aria-pressed="false">
+                            ♡
+                        </button>
+
+                    </article>
+
+
+                    <article class="product-card" id="product-4" data-category="bags" data-name="حقيبة نسائية أنيقة"
+                        data-price="12000">
+
+                        <div class="product-image">
+
+                            <img src="imag4.jpg" alt="حقيبة نسائية أنيقة" loading="lazy">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">الحقائب</span>
+
+                            <h3>حقيبة نسائية أنيقة</h3>
+
+                            <p class="product-description">
+                                تصميم أنيق للاستخدام اليومي.
+                            </p>
+
+                            <p class="product-price">
+                                <data value="12000">12,000 ريال</data>
+                            </p>
+
+                            <button type="button" class="add-to-cart" data-product-id="product-4">
+                                أضيفي إلى السلة
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="favorite-button" data-product-id="product-4"
+                            aria-label="إضافة الحقيبة إلى المفضلة" aria-pressed="false">
+                            ♡
+                        </button>
+
+                    </article>
+
+                </div>
+
+                <p class="products-status" id="products-status" role="status" aria-live="polite"></p>
+
+            </div>
+
+        </section>
+        <!-- العروض الخاصة -->
+        <section class="offers section" id="offers">
+
+            <div class="container">
+
+                <div class="offer-content">
+
+                    <span>عروض لمسة</span>
+
+                    <h2>لحظات جمال تستحق الاحتفال</h2>
+
+                    <p>
+                        اكتشفي عروضنا على منتجات مختارة
+                        واجعلي روتين العناية أكثر متعة.
+                    </p>
+
+                    <a href="#products" class="btn btn-primary">
+                        اكتشفي المنتجات
+                    </a>
+
+                </div>
+
+                <div class="offer-image">
+
+                    <img src="imag2.jpg" alt="مجموعة من منتجات الجمال" loading="lazy">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- وصل حديثًا -->
+        <section class="new-arrivals section" id="new-arrivals">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>وصل حديثًا</span>
+
+                    <h2>أحدث إضافاتنا</h2>
+
+                    <p>
+                        اكتشفي أحدث المنتجات التي أضفناها إلى المتجر.
+                    </p>
+
+                </div>
+
+                <div class="products-grid">
+
+                    <article class="product-card" id="new-product-1" data-category="skincare"
+                        data-name="مجموعة العناية بالبشرة" data-price="6500">
+
+                        <div class="product-image">
+
+                            <img src="images/products/new-1.jpg" alt="مجموعة العناية بالبشرة" loading="lazy">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                العناية بالبشرة
+                            </span>
+
+                            <h3>مجموعة العناية بالبشرة</h3>
+
+                            <p class="product-price">
+                                <data value="6500">6,500 ريال</data>
+                            </p>
+
+                            <button type="button" class="add-to-cart" data-product-id="new-product-1">
+                                أضيفي إلى السلة
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="favorite-button" data-product-id="new-product-1"
+                            aria-label="إضافة مجموعة العناية بالبشرة إلى المفضلة" aria-pressed="false">
+                            ♡
+                        </button>
+
+                    </article>
+
+
+                    <article class="product-card" id="new-product-2" data-category="accessories"
+                        data-name="مجموعة إكسسوارات" data-price="4500">
+
+                        <div class="product-image">
+
+                            <img src="images/products/new-2.jpg" alt="مجموعة إكسسوارات نسائية" loading="lazy">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                الإكسسوارات
+                            </span>
+
+                            <h3>مجموعة إكسسوارات</h3>
+
+                            <p class="product-price">
+                                <data value="4500">4,500 ريال</data>
+                            </p>
+
+                            <button type="button" class="add-to-cart" data-product-id="new-product-2">
+                                أضيفي إلى السلة
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="favorite-button" data-product-id="new-product-2"
+                            aria-label="إضافة مجموعة الإكسسوارات إلى المفضلة" aria-pressed="false">
+                            ♡
+                        </button>
+
+                    </article>
+
+
+                    <article class="product-card" id="new-product-3" data-category="gifts" data-name="بوكس هدية مميز"
+                        data-price="10000">
+
+                        <div class="product-image">
+
+                            <img src="images/products/new-3.jpg" alt="بوكس هدية مميز" loading="lazy">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                الهدايا
+                            </span>
+
+                            <h3>بوكس هدية مميز</h3>
+
+                            <p class="product-price">
+                                <data value="10000">10,000 ريال</data>
+                            </p>
+
+                            <button type="button" class="add-to-cart" data-product-id="new-product-3">
+                                أضيفي إلى السلة
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="favorite-button" data-product-id="new-product-3"
+                            aria-label="إضافة بوكس الهدية إلى المفضلة" aria-pressed="false">
+                            ♡
+                        </button>
+
+                    </article>
+
+
+                    <article class="product-card" id="new-product-4" data-category="haircare"
+                        data-name="مجموعة العناية بالشعر" data-price="5500">
+
+                        <div class="product-image">
+
+                            <img src="images/products/new-4.jpg" alt="مجموعة العناية بالشعر" loading="lazy">
+
+                        </div>
+
+                        <div class="product-info">
+
+                            <span class="product-category">
+                                العناية بالشعر
+                            </span>
+
+                            <h3>مجموعة العناية بالشعر</h3>
+
+                            <p class="product-price">
+                                <data value="5500">5,500 ريال</data>
+                            </p>
+
+                            <button type="button" class="add-to-cart" data-product-id="new-product-4">
+                                أضيفي إلى السلة
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="favorite-button" data-product-id="new-product-4"
+                            aria-label="إضافة مجموعة العناية بالشعر إلى المفضلة" aria-pressed="false">
+                            ♡
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- بوكسات الهدايا -->
+        <section class="gifts section" id="gifts">
+
+            <div class="container">
+
+                <div class="gift-content">
+
+                    <span>هدية من القلب</span>
+
+                    <h2>لأن التفاصيل الصغيرة تصنع الفرق</h2>
+
+                    <p>
+                        اختاري هدية مميزة لمن تحبين
+                        من مجموعات العناية والعطور والإكسسوارات.
+                    </p>
+
+                    <a href="#new-product-3" class="btn btn-primary">
+                        اكتشفي بوكسات الهدايا
+                    </a>
+
+                </div>
+
+                <div class="gift-image">
+
+                    <img src="imag1.jpg" alt="بوكس هدية يحتوي على منتجات الجمال والعناية" loading="lazy">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- مميزات المتجر -->
+        <section class="features section" id="features">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>تجربة تسوق مميزة</span>
+
+                    <h2>لماذا تختارين لمسة؟</h2>
+
+                    <p>
+                        نهتم بأن تكون تجربة التسوق واضحة وسهلة.
+                    </p>
+
+                </div>
+
+                <div class="features-grid">
+
+                    <article class="feature-card">
+
+                        <span aria-hidden="true">🛍️</span>
+
+                        <h3>تسوق سهل</h3>
+
+                        <p>
+                            تصفحي المنتجات والأقسام بسهولة.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <span aria-hidden="true">💝</span>
+
+                        <h3>خيارات متنوعة</h3>
+
+                        <p>
+                            اكتشفي منتجات الجمال والعناية والهدايا.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <span aria-hidden="true">📦</span>
+
+                        <h3>خيارات توصيل</h3>
+
+                        <p>
+                            تعرفي على خيارات التوصيل المتاحة عند الطلب.
+                        </p>
+
+                    </article>
+
+                    <article class="feature-card">
+
+                        <span aria-hidden="true">💬</span>
+
+                        <h3>سهولة التواصل</h3>
+
+                        <p>
+                            تواصلي مع المتجر للاستفسار عن المنتجات.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- معرض الصور -->
+        <section class="gallery section" id="gallery">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>عالم لمسة</span>
+
+                    <h2>تفاصيل تلهم جمالك</h2>
+
+                    <p>
+                        مجموعة من الصور التي تعكس هوية المتجر.
+                    </p>
+
+                </div>
+
+                <div class="gallery-grid">
+
+                    <img src="imag1.jpg" alt="منتجات مكياج" loading="lazy">
+
+                    <img src="imag2.jpg" alt="منتجات العناية بالبشرة" loading="lazy">
+
+                    <img src="imag1.jpg" alt="عطور وإكسسوارات" loading="lazy">
+
+                    <img src="imag8 (2).jpg" alt="مجموعة هدايا" loading="lazy">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- آراء العملاء -->
+        <section class="testimonials section" id="testimonials">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>تجارب التسوق</span>
+
+                    <h2>آراء عملائنا</h2>
+
+                    <p>
+                        نرحب بآراء العملاء وتجاربهم بعد الشراء.
+                    </p>
+
+                </div>
+
+                <div class="testimonials-grid">
+
+                    <article class="testimonial-card">
+
+                        <h3>رأيك يهمنا</h3>
+
+                        <p>
+                            نحرص على تطوير تجربة التسوق باستمرار
+                            والاستماع إلى ملاحظات عملائنا.
+                        </p>
+
+                        <p class="testimonial-note">
+                            ستظهر هنا تقييمات العملاء الحقيقية
+                            بعد توفرها.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- النشرة البريدية -->
+        <section class="newsletter section" id="newsletter">
+
+            <div class="container">
+
+                <h2>كوني أول من يعرف جديد لمسة</h2>
+
+                <p>
+                    اشتركي لتصلك أخبار المنتجات والعروض الجديدة.
+                </p>
+
+                <form id="newsletter-form" action="#" method="post">
+
+                    <label for="newsletter-email">
+                        البريد الإلكتروني
+                    </label>
+
+                    <input type="email" id="newsletter-email" name="email" placeholder="أدخلي بريدك الإلكتروني"
+                        autocomplete="email" required>
+
+                    <button type="submit">
+                        اشتركي الآن
+                    </button>
+
+                </form>
+
+                <p id="newsletter-status" role="status" aria-live="polite"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- من نحن -->
+        <section class="about section" id="about">
+
+            <div class="container">
+
+                <div class="about-image">
+
+                    <img src="imag.jpg" alt="مجموعة من منتجات متجر لمسة" loading="lazy">
+
+                </div>
+
+                <div class="about-content">
+
+                    <span>قصتنا</span>
+
+                    <h2>الجمال في التفاصيل</h2>
+
+                    <p>
+                        لمسة متجر متخصص في منتجات الجمال والعناية،
+                        يجمع مجموعة متنوعة من المكياج والعطور
+                        ومنتجات العناية والإكسسوارات والهدايا.
+                    </p>
+
+                    <p>
+                        نهدف إلى تقديم تجربة تسوق واضحة ومريحة،
+                        تساعدك على اكتشاف المنتجات واختيار ما يناسبك.
+                    </p>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        تواصلي معنا
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- الأسئلة الشائعة -->
+        <section class="faq section" id="faq">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>هل لديك استفسار؟</span>
+
+                    <h2>الأسئلة الشائعة</h2>
+
+                </div>
+
+                <div class="faq-list">
+
+                    <details>
+                        <summary>كيف يمكنني طلب المنتجات؟</summary>
+
+                        <p>
+                            اختاري المنتجات التي تريدينها وأضيفيها إلى السلة،
+                            ثم تابعي خطوات إتمام الطلب.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>كيف أعرف تكلفة التوصيل؟</summary>
+
+                        <p>
+                            تختلف تكلفة التوصيل حسب المدينة والمنطقة،
+                            وسيتم توضيحها قبل تأكيد الطلب عند تفعيل نظام التوصيل.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>ما طرق الدفع المتاحة؟</summary>
+
+                        <p>
+                            ستُعرض طرق الدفع المعتمدة لدى المتجر
+                            عند تفعيل نظام الطلبات.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>كيف أتواصل مع خدمة العملاء؟</summary>
+
+                        <p>
+                            يمكنك التواصل عبر معلومات الاتصال الرسمية
+                            التي سيضيفها المتجر.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>ما سياسة الاستبدال والاسترجاع؟</summary>
+
+                        <p>
+                            ستُنشر سياسة واضحة للاستبدال والاسترجاع
+                            قبل بدء استقبال الطلبات.
+                        </p>
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- التواصل -->
+        <section class="contact section" id="contact">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>نحن هنا لمساعدتك</span>
+
+                    <h2>تواصلي معنا</h2>
+
+                    <p>
+                        لديك استفسار عن أحد المنتجات؟
+                        يسعدنا التواصل معك.
+                    </p>
+
+                </div>
+
+                <form id="contact-form" action="#" method="post" class="contact-form">
+
+                    <div class="form-group">
+
+                        <label for="customer-name">الاسم</label>
+
+                        <input type="text" id="customer-name" name="name" autocomplete="name" required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="customer-email">
+                            البريد الإلكتروني
+                        </label>
+
+                        <input type="email" id="customer-email" name="email" autocomplete="email" required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="customer-message">رسالتك</label>
+
+                        <textarea id="customer-message" name="message" rows="5" required></textarea>
+
+                    </div>
+
+                    <button type="submit">
+                        إرسال الرسالة
+                    </button>
+
+                </form>
+
+                <p id="contact-status" role="status" aria-live="polite"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- سياسات المتجر -->
+        <section class="store-policies section" id="store-policies">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>معلومات مهمة</span>
+
+                    <h2>سياسات المتجر</h2>
+
+                </div>
+
+                <div class="policies-grid">
+
+                    <article id="shipping">
+
+                        <h3>سياسة الشحن والتوصيل</h3>
+
+                        <p>
+                            ستُوضح مناطق التوصيل والتكاليف والمدة المتوقعة
+                            قبل بدء استقبال الطلبات.
+                        </p>
+
+                    </article>
+
+                    <article id="returns">
+
+                        <h3>الاستبدال والاسترجاع</h3>
+
+                        <p>
+                            ستُوضح شروط الاستبدال والاسترجاع ومدتهما
+                            والإجراءات المطلوبة قبل إطلاق المتجر.
+                        </p>
+
+                    </article>
+
+                    <article id="privacy">
+
+                        <h3>سياسة الخصوصية</h3>
+
+                        <p>
+                            ستُوضح كيفية التعامل مع بيانات العملاء
+                            وحمايتها واستخدامها.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- سلة المشتريات -->
+        <section class="cart-panel section" id="cart-panel" aria-labelledby="cart-title" >
+
+            <div class="container">
+
+                <h2 id="cart-title">سلة مشترياتك 🛒</h2>
+
+                <p>
+                    راجعي المنتجات والكميات قبل إتمام طلبك.
+                </p>
+
+                <div class="cart-table-wrapper">
+
+                    <table class="cart-table">
+
+                        <caption>
+                            المنتجات الموجودة في سلة المشتريات
+                        </caption>
+
+                        <thead>
+                            <tr>
+                                <th scope="col">المنتج</th>
+                                <th scope="col">السعر</th>
+                                <th scope="col">الكمية</th>
+                                <th scope="col">الإجمالي</th>
+                                <th scope="col">إجراء</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="cart-items">
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <p id="cart-empty">
+                    سلة المشتريات فارغة حاليًا.
+                </p>
+
+                <div class="cart-summary">
+
+                    <p>
+                        إجمالي المنتجات:
+                        <strong id="cart-subtotal">0 ريال</strong>
+                    </p>
+
+                    <p>
+                        تكلفة التوصيل:
+                        <strong id="cart-shipping">تحدد لاحقًا</strong>
+                    </p>
+
+                    <p>
+                        الإجمالي النهائي:
+                        <strong id="cart-total">0 ريال</strong>
+                    </p>
+
+                </div>
+
+                <button type="button" class="checkout-button">
+                    متابعة إتمام الطلب
+                </button>
+
+                <button type="button" class="close-cart">
+                    مواصلة التسوق
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- المفضلة -->
+        <section class="wishlist-panel section" id="wishlist-panel" aria-labelledby="wishlist-title" >
+
+            <div class="container">
+
+                <h2 id="wishlist-title">منتجاتك المفضلة ❤️</h2>
+
+                <p>
+                    احتفظي بالمنتجات التي أعجبتك للعودة إليها لاحقًا.
+                </p>
+
+                <div class="wishlist-items products-grid" id="wishlist-items"></div>
+
+                <p id="wishlist-empty">
+                    لم تضيفي أي منتجات إلى المفضلة حتى الآن.
+                </p>
+
+                <button type="button" class="close-wishlist">
+                    إغلاق المفضلة
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- إتمام الطلب -->
+        <section class="checkout section" id="checkout" aria-labelledby="checkout-title" >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>خطوة أخيرة</span>
+
+                    <h2 id="checkout-title">إتمام طلبك</h2>
+
+                    <p>
+                        أدخلي بياناتك لمتابعة تجهيز الطلب.
+                    </p>
+
+                </div>
+
+                <form id="checkout-form" class="checkout-form">
+
+                    <div class="form-group">
+
+                        <label for="checkout-name">
+                            الاسم الكامل
+                        </label>
+
+                        <input type="text" id="checkout-name" name="customerName" autocomplete="name" required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="checkout-phone">رقم الهاتف</label>
+
+                        <input type="tel" id="checkout-phone" name="phone" autocomplete="tel" required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="checkout-city">المدينة</label>
+
+                        <input type="text" id="checkout-city" name="city" autocomplete="address-level2" required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="checkout-address">
+                            العنوان بالتفصيل
+                        </label>
+
+                        <textarea id="checkout-address" name="address" rows="3" autocomplete="street-address"
+                            required></textarea>
+
+                    </div>
+
+                    <fieldset class="form-group">
+
+                        <legend>طريقة الدفع</legend>
+
+                        <label>
+                            <input type="radio" name="paymentMethod" value="cash" required>
+                            الدفع عند الاستلام
+                        </label>
+
+                        <label>
+                            <input type="radio" name="paymentMethod" value="other">
+                            طريقة دفع أخرى عند توفرها
+                        </label>
+
+                    </fieldset>
+
+                    <div class="form-group">
+
+                        <label for="checkout-notes">
+                            ملاحظات إضافية (اختياري)
+                        </label>
+
+                        <textarea id="checkout-notes" name="notes" rows="3"></textarea>
+
+                    </div>
+
+                    <button type="submit">
+                        تأكيد الطلب
+                    </button>
+
+                </form>
+
+                <p id="checkout-status" role="status" aria-live="polite"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- تذييل الصفحة -->
+    <footer class="site-footer" id="footer">
+
+        <div class="container">
+
+            <div class="footer-about">
+
+                <a href="#home" class="logo">
+
+                    <span class="logo-name">LAMSA</span>
+
+                    <span class="logo-subtitle">
+                        عالم الجمال والأنوثة
+                    </span>
+
+                </a>
+
+                <p>
+                    اكتشفي عالم الجمال والعناية والإكسسوارات
+                    في تجربة تسوق واحدة.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>روابط سريعة</h3>
+
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#categories">الأقسام</a></li>
+                    <li><a href="#products">المنتجات</a></li>
+                    <li><a href="#offers">العروض</a></li>
+                    <li><a href="#new-arrivals">وصل حديثًا</a></li>
+                    <li><a href="#gifts">الهدايا</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#faq">الأسئلة الشائعة</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>خدمة العملاء</h3>
+
+                <ul>
+                    <li><a href="#shipping">سياسة الشحن</a></li>
+                    <li><a href="#returns">الاستبدال والاسترجاع</a></li>
+                    <li><a href="#privacy">سياسة الخصوصية</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>تابعينا</h3>
+
+                <p>
+                    واتساب: يضاف رقم المتجر لاحقًا.
+                </p>
+
+                <p>
+                    إنستغرام: يضاف الحساب الرسمي لاحقًا.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 LAMSA. جميع الحقوق محفوظة.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
